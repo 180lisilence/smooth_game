@@ -1,4 +1,4 @@
-"""
+﻿"""
 Lua 执行引擎。
 
 通过文件轮询机制与注入游戏的 DLL 通信：
@@ -19,17 +19,21 @@ from typing import Tuple, Optional
 from core.logger import log_info, log_error, log_warning, log_debug
 from core.constants import LUA_TIMEOUT, runtime_config_dir
 
-# 通信文件目录（统一用程序目录下的 comm 子目录，不写C盘）
+# 通信文件目录（与 DLL 一致：DLL 所在目录，不写C盘）
+# DLL 在 DllMain 中通过 GetModuleFileNameA 获取自身路径，通信文件放在同目录
 _comm_dir = None
 
 
 def _get_comm_dir() -> str:
-    """获取通信文件目录，确保存在。"""
+    """获取通信文件目录，确保存在。
+    与 DLL 内部逻辑一致：使用程序目录（DLL所在目录）。
+    """
     global _comm_dir
     if _comm_dir:
         return _comm_dir
-    base = runtime_config_dir()
-    _comm_dir = os.path.join(base, "comm")
+    # DLL 在 dist/ 目录下，通信文件与 DLL 同目录
+    from core.constants import DIST_DIR
+    _comm_dir = DIST_DIR
     os.makedirs(_comm_dir, exist_ok=True)
     return _comm_dir
 
@@ -160,3 +164,6 @@ def ping_dll(timeout: float = 2.0) -> bool:
     """检测 DLL 是否可通信（发送一条简单 Lua 命令）。"""
     success, _ = execute_lua("return 1", timeout)
     return success
+
+
+
