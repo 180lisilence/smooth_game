@@ -1,0 +1,11 @@
+{
+    "plugin_id": "game_monitor",
+    "name": "游戏监控",
+    "version": "1.0.0",
+    "author": "smooth_game",
+    "description": "实时监控游戏状态：品阶/人口/幸福度/金钱/资源/时间/建筑数，自动刷新。",
+    "category": "监控",
+    "priority": 50,
+    "icon": "",
+    "enabled_by_default": true
+}

@@ -1,0 +1,11 @@
+{
+    "plugin_id": "advanced_tools",
+    "name": "高级工具",
+    "version": "1.0.0",
+    "author": "smooth_game",
+    "description": "高级工具：时间跳转、天气控制、NPC管理、任务管理、鸿业诊断、天赋诊断。",
+    "category": "高级",
+    "priority": 40,
+    "icon": "",
+    "enabled_by_default": true
+}

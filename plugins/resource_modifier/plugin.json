@@ -1,0 +1,11 @@
+{
+    "plugin_id": "resource_modifier",
+    "name": "资源修改",
+    "version": "1.0.0",
+    "author": "smooth_game",
+    "description": "修改游戏内10种基础资源（金钱/矿产/木料/衣物/食物/水/盐/酒/精华），支持一键增加和自定义数量。",
+    "category": "资源",
+    "priority": 10,
+    "icon": "",
+    "enabled_by_default": true
+}

@@ -1,0 +1,11 @@
+{
+    "plugin_id": "creative_mode",
+    "name": "创造模式",
+    "version": "1.0.0",
+    "author": "smooth_game",
+    "description": "9项创造模式开关：最大鸿业、解锁全部建筑、无限资源、升级无限制、道路绕行、人口通用、GM标志、无灾害伤害、无灾害。",
+    "category": "创造",
+    "priority": 20,
+    "icon": "",
+    "enabled_by_default": true
+}

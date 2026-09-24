@@ -1,0 +1,11 @@
+{
+    "plugin_id": "world_tools",
+    "name": "世界系统",
+    "version": "1.0.0",
+    "author": "smooth_game",
+    "description": "世界系统工具：关闭所有灾害、市场价格修改、自动纳税、时间流速控制。",
+    "category": "世界",
+    "priority": 30,
+    "icon": "",
+    "enabled_by_default": true
+}
