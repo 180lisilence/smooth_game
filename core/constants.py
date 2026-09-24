@@ -1,4 +1,4 @@
-"""
+﻿"""
 smooth_game - 全局常量
 
 集中存放跨模块共享的常量，杜绝散落各处的硬编码。
@@ -9,7 +9,7 @@ import sys
 
 # ---------------------------------------------------------------- 版本（唯一版本源）
 APP_NAME = "smooth_game"
-APP_VERSION = "0.1.1"
+APP_VERSION = "0.1.2"
 APP_DISPLAY_NAME = "平野孤鸿 插件化修改器"
 
 # ---------------------------------------------------------------- 游戏环境
@@ -63,3 +63,4 @@ LUA_TIMEOUT_LONG = 10.0
 PLUGIN_META_FILE = "plugin.json"
 PLUGIN_ENTRY_MODULE = "main"
 PLUGIN_ENTRY_CLASS = "Plugin"
+
